@@ -431,60 +431,32 @@ button:hover {
     line-height: 1.6;
     text-align: center;
 }
+    @media (max-width: 850px) {
 
-/* ============================= */
-/* 📱 MOBILE HOBBIES */
-/* ============================= */
-
-@media (max-width: 850px) {
-
-    .projects {
-        grid-template-columns: 1fr;
-        width: 100%;
+    .skills {
+        grid-template-columns: 1fr 1fr;
         max-width: 500px;
         margin: 0 auto;
     }
 
-    .project-card {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .project-card p {
+    .skill-card {
         text-align: center;
     }
 }
 
 @media (max-width: 500px) {
 
-    .section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .section > h2 {
-        text-align: center;
+    .skills {
+        grid-template-columns: 1fr;
         width: 100%;
-    }
-
-    .projects {
-        width: 100%;
-        max-width: 340px;
+        max-width: 330px;
         margin: 0 auto;
     }
 
-    .project-card {
+    .skill-card {
         width: 100%;
-        padding: 25px 20px;
         text-align: center;
     }
+}
+    
 
-    .project-card h3 {
-        text-align: center;
-    }
-
-    .project-card p {
-        text-align: center;
-    }
-    }  
