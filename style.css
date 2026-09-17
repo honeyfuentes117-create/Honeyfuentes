@@ -389,74 +389,89 @@ button:hover {
 .skill-card:hover {
     transform: translateY(-8px) rotate(1deg);
 
-  /* ============================= */
-/* 🎀 MY HOBBIES - CENTERED */
-/* ============================= */
+  /* ==============================
+   💗 CENTER MY HOBBIES
+   ============================== */
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    justify-content: center;
-    align-items: stretch;
+    width: 100% ;
+    max-width: 1000px ;
+    margin: 0 auto ;
+
+    display: flex ;
+    justify-content: center ;
+    align-items: stretch ;
+    gap: 25px ;
 }
 
 .project-card {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    border: 2px solid #ffc1df;
-    box-shadow: 0 8px 25px rgba(255, 105, 180, 0.12);
+    flex: 1 ;
+    max-width: 300px ;
+    min-height: 220px ;
 
-    text-align: center;
+    background: #ffffff ;
+    border: 2px solid #ffb6d9 ;
+    border-radius: 20px ;
 
-    transition: 0.3s;
-    position: relative;
+    padding: 30px 20px ;
+
+    text-align: center ;
+
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15) !important;
 }
 
 .project-card > span {
-    display: block;
-    color: #e60073;
-    font-size: 14px;
-    font-weight: bold;
+    display: block ;
+    text-align: center ;
+    color: #e60073 ;
+    font-size: 15px ;
+    margin-bottom: 12px ;
 }
 
 .project-card h3 {
-    margin: 15px 0;
-    color: #d90070;
+    text-align: center ;
+    color: #d90070 ;
+    margin: 10px 0 15px ;
+}
+
+.project-card h3 span {
+    color: #d90070 ;
 }
 
 .project-card p {
-    color: #70405b;
-    line-height: 1.6;
-    text-align: center;
+    text-align: center ;
+    color: #70405b ;
+    line-height: 1.6 ;
 }
-    @media (max-width: 850px) {
 
-    .skills {
-        grid-template-columns: 1fr 1fr;
-        max-width: 500px;
-        margin: 0 auto;
+
+/* 📱 PHONE */
+@media (max-width: 850px) {
+
+    .projects {
+        width: 100% ;
+        max-width: 350px ;
+        margin: 0 auto ;
+
+        display: flex ;
+        flex-direction: column ;
+        align-items: center ;
+        gap: 25px ;
     }
 
-    .skill-card {
+    .project-card {
+        width: 100% ;
+        max-width: 330px ;
+        flex: none ;
+
+        margin: 0 auto ;
+
+        text-align: center ;
+    }
+
+    .project-card > span,
+    .project-card h3,
+    .project-card p {
         text-align: center;
     }
 }
-
-@media (max-width: 500px) {
-
-    .skills {
-        grid-template-columns: 1fr;
-        width: 100%;
-        max-width: 330px;
-        margin: 0 auto;
-    }
-
-    .skill-card {
-        width: 100%;
-        text-align: center;
-    }
-}
-    
-
