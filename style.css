@@ -1,3 +1,6 @@
+/* ================================
+   RESET
+================================ */
 
 * {
     margin: 0;
@@ -12,6 +15,11 @@ body {
     color: #4a1735;
     overflow-x: hidden;
 }
+
+
+/* ================================
+   NAVIGATION
+================================ */
 
 nav {
     width: 100%;
@@ -37,6 +45,7 @@ nav {
 }
 
 
+/* LOGO */
 
 .logo {
     width: 45px;
@@ -419,7 +428,7 @@ nav a:hover {
 }
 
 
-
+/* CONTACT BUTTON */
 
 .contact-section button {
     display: block;
@@ -454,7 +463,7 @@ nav a:hover {
 }
 
 
-
+/* CONTACT INFORMATION */
 
 .contact-info {
     display: none;
@@ -471,7 +480,7 @@ nav a:hover {
 }
 
 
-
+/* CONTACT CARD */
 
 .contact-item {
     width: 190px;
@@ -511,6 +520,10 @@ nav a:hover {
 }
 
 
+/* ================================
+   FOOTER
+================================ */
+
 footer {
     text-align: center;
 
@@ -524,7 +537,9 @@ footer {
 }
 
 
-
+/* ================================
+   TABLET
+================================ */
 
 @media (max-width: 850px) {
 
@@ -563,7 +578,9 @@ footer {
 }
 
 
-
+/* ================================
+   MOBILE
+================================ */
 
 @media (max-width: 500px) {
 
@@ -593,7 +610,7 @@ footer {
     }
 
 
-    
+    /* HERO */
 
     .hero {
         min-height: auto;
@@ -627,7 +644,7 @@ footer {
     }
 
 
-    
+    /* SECTIONS */
 
     .section {
         padding: 70px 20px;
@@ -640,7 +657,7 @@ footer {
     }
 
 
-   
+    /* SKILLS */
 
     .skills {
         grid-template-columns: 1fr;
@@ -649,7 +666,7 @@ footer {
     }
 
 
-   
+    /* HOBBIES */
 
     .projects {
         grid-template-columns: 1fr;
@@ -667,7 +684,7 @@ footer {
     }
 
 
-    
+    /* CONTACT */
 
     .contact-info {
         flex-direction: column;
@@ -710,4 +727,4 @@ footer {
     .hero h1 {
         font-size: 34px;
     }
-   }
+    }
